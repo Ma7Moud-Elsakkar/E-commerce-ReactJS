@@ -11,6 +11,7 @@ import { AnimatePresence } from "motion/react";
 import CatPage from "./pages/CategoryPage/CatPage";
 import SearchResults from "./pages/SearchResults";
 import Fev from "./pages/Favorites/Fev";
+import Footer from "./Components/footer/Footer";
 
 
 
@@ -49,7 +50,7 @@ function App() {
       
 </AnimatePresence>
 
-
+      <Footer />
 
     </>
   )

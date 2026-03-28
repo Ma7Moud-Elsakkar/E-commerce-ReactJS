@@ -1,0 +1,146 @@
+.footer-container {
+  background-color: var(--bg-color);
+  color: var(--color-heading);
+  margin-top: 80px; /* Added spacing from products above */
+  padding: 60px 0 0 0;
+  font-family: inherit;
+  direction: ltr; /* English text alignment */
+  border-top: 1px solid var(--border-color);
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  gap: 30px;
+  
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 30px;
+  
+}
+
+.footer-logo-img {
+  width: 160px;
+  max-width: 100%;
+  margin-bottom: 20px;
+  object-fit: contain;
+}
+
+.footer-section h2 {
+  font-size: 18px;
+  color: var(--color-heading);
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.footer-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background-color: var(--main-color);
+}
+
+.footer-section.about p {
+  color: var(--p-color);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-links a {
+  color: var(--p-color);
+  text-decoration: none;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--main-color);
+}
+
+.footer-section.links ul,
+.footer-section.contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section.links ul li,
+.footer-section.contact ul li {
+  margin-bottom: 12px;
+}
+
+.footer-section.links ul li a {
+  color: var(--p-color);
+  text-decoration: none;
+  transition: color 0.3s ease, padding-right 0.3s ease;
+  display: inline-block;
+}
+
+.footer-section.links ul li a:hover {
+  color: var(--main-color);
+  padding-left: 8px; /* Slight slide right */
+}
+
+.footer-section.contact ul li {
+  color: var(--p-color);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.footer-section.contact ul li span {
+  color: var(--color-heading);
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-section.contact ul li span svg {
+  color: var(--main-color);
+}
+
+.footer-bottom {
+  background-color: var(--white-color);
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid var(--border-color);
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: var(--p-color);
+  font-size: 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+  }
+  
+  .footer-section {
+    min-width: 100%;
+  }
+}
