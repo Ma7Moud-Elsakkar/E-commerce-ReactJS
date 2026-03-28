@@ -39,7 +39,7 @@ function App() {
 <AnimatePresence mode="wait">
 
       <Routes>
-        <Route path="/E-commerce-ReactJS" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/cart" element={<CartPage />} />
         <Route path="/favorites" element={<Fev />} />
         <Route path="/search" element={<SearchResults />} />
