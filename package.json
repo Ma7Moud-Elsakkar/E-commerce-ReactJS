@@ -2,7 +2,7 @@
   "name": "e-commerce",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://Ma7Moud-Elsakkar.github.io/E-commerce-ReactJS",
+  "homepage": "https://Ma7Moud-Elsakkar.github.io",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
