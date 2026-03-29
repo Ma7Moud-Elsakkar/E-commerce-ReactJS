@@ -9,7 +9,7 @@ import toast from 'react-hot-toast'
 function ProText({product}) {
 
 
-    const {cartItems , addCart, addToFev, fevItems , removeFev} = useContext(CartContext);
+    const {cartItems , addCart, removeCart , addToFev, fevItems , removeFev} = useContext(CartContext);
 
     const isInCart = cartItems.some(i => i.id === product.id);
 
@@ -18,7 +18,12 @@ function ProText({product}) {
 
 
         const handleAddCart = () => {
-        addCart(product)
+        if(isInCart) {
+        removeCart(product.id)
+        toast.error(`${product.title} Removed From Cart`)
+        } else {
+
+            addCart(product)
 
         toast.success (
         <div className="toast-wrapper">
@@ -35,6 +40,7 @@ function ProText({product}) {
 
         , {duration : 3500}
         )
+    }
     }
 
 //favorites

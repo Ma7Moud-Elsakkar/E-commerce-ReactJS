@@ -111,7 +111,7 @@
     background: transparent;
     background-color: var(--border-color);
     color: var(--main-color);
-    pointer-events: none;
+    cursor: pointer;
 }
 
 .item_details .item_info .btn svg {
