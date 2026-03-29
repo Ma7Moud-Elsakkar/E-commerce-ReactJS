@@ -21,7 +21,6 @@
 
 .top-header .search_box {
     width: 500px;
-    
     display: flex;
     align-items: center;
     background: var(--bg-color);
